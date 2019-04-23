@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y29-6q-H6Q">
-                                <rect key="frame" x="50" y="128" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y29-6q-H6Q">
+                                <rect key="frame" x="50" y="128" width="48" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -46,10 +46,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DY-3Q-nqv">
+                                <rect key="frame" x="110" y="574" width="154" height="30"/>
+                                <state key="normal" title="INTRODUCE THYSELF"/>
+                                <connections>
+                                    <action selector="introduceThyselfButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFa-zP-GL9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0DY-3Q-nqv" secondAttribute="bottom" constant="63" id="2dg-pC-1Uf"/>
+                            <constraint firstItem="0DY-3Q-nqv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tKs-IB-6W3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="BpQ-KW-AA2" id="OJA-XL-0Dm"/>
+                        <outlet property="hobbyyyyyyyLabel" destination="BpQ-KW-AA2" id="Gu2-rW-dSQ"/>
+                        <outlet property="nameLabel" destination="Y29-6q-H6Q" id="eCM-NQ-FiR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
