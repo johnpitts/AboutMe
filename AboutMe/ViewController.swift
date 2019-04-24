@@ -28,6 +28,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var hobbiesLabel: UILabel!
     
-    
+//    added code here to say that Professor Madsen prefers his variable declarations as the end
     
 }
